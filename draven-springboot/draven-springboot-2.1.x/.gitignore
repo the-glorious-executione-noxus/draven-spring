@@ -23,6 +23,6 @@
 hs_err_pid*
 
 /.idea/
-mvnw.cmd
-mvnw
-*.*iml
+/mvnw.cmd
+/mvnw
+/*.iml
