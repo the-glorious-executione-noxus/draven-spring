@@ -10,6 +10,11 @@ eureka:
       defaultZone: http://localhost:8761/eureka
 #  zipkin:
 #    base-url: http://localhost:10085
+  rabbitmq:                    #本地环境不需要配置mq，但是需要启动mq,Springboot会自动连接本地mq
+    host: 116.196.77.250
+    port: 5672
+    username: guest
+    password: guest
 management:
   metrics:
     web:
@@ -22,6 +27,7 @@ management:
   endpoint:
     health:
       show-details: ALWAYS
+
 #  boot:
 #    admin:
 #      client:
