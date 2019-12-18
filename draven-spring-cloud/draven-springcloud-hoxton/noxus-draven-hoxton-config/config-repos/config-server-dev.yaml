@@ -1,3 +1,9 @@
+spring:
+  cloud:
+    config:
+      label: master
+      url: http://localhost:8888/config_repos
+
 eureka:
   client:
     service-url:
