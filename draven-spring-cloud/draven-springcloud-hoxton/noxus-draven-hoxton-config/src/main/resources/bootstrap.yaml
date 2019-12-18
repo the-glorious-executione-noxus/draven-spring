@@ -1,27 +1,54 @@
 server:
   port: 8888
+
 spring:
-  application:
-    name: config-server # application name
   cloud:
     config:
       server:
         git:
-          url:
-          search-paths: noxus-draven-hoxton-config/config_repos
-          skipSslValidation: true
-          username: user
-          password: secret
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka/
+          uri: https://github.com/the-glorious-executione-noxus/draven-spring.git
+          search-paths: draven-spring-cloud/draven-springcloud-hoxton/noxus-draven-hoxton-config/config-repos
+          username: 1064517852@qq.com
+          password: w1994z015x
+  application:
+    name: config-server
+
+    config:
+      label: master
+      url: http://localhost:8888/config_repos
+
+  rabbitmq:                    #本地环境不需要配置mq，但是需要启动mq,Springboot会自动连接本地mq
+    host: 116.196.77.250
+    port: 5672
+    username: guest
+    password: guest
+
+  #  profiles:
+  #    active:
+
+  #spring:
+  #  application:
+  #    name: config-server
+  #  profiles:
+  #    active: git
+  #  cloud:
+  #    config:
+  #      discovery:
+  #        enabled: true
+  #        service-id: config-server
+  #      label: master
+
+
+  #eureka:
+  #  client:
+  #    service-url:
+  #      defaultZone: http://localhost:8761/eureka
 
   profiles:
-    active: dev,prod
+    active: dev
 
-#management:
-#  endpoints:
-#    web:
-#      exposure:
-#        include: '*'
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
