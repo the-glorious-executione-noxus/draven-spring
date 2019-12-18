@@ -1,0 +1,27 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: config-server # application name
+  cloud:
+    config:
+      server:
+        git:
+          url:
+          search-paths: noxus-draven-hoxton-config/config_repos
+          skipSslValidation: true
+          username: user
+          password: secret
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+  profiles:
+    active: dev,prod
+
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: '*'
