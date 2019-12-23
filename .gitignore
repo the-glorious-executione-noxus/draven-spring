@@ -26,3 +26,8 @@ hs_err_pid*
 mvnw.cmd
 mvnw
 *.*iml
+noxus-draven-hoxton-admin/src/test/
+noxus-draven-hoxton-config/src/test/
+noxus-draven-hoxton-eureka/src/test/
+noxus-draven-hoxton-gateway/src/test/
+src/

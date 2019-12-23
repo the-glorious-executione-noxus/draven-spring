@@ -1,0 +1,45 @@
+server:
+  port: 8761
+
+spring:
+  application:
+    name: eureka-server
+eureka:
+  server:
+    enable-self-preservation: false #关闭自我保护
+    eviction-interval-timer-in-ms: 60000 #清理间隔
+  client:
+    fetch-registry: false
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:${server.port}/eureka/
+  #  zipkin:
+  #    base-url: http://localhost:10085
+  rabbitmq:                    #本地环境不需要配置mq，但是需要启动mq,Springboot会自动连接本地mq
+    host: 116.196.77.250
+    port: 5672
+    username: guest
+    password: guest
+
+security:
+  basic:
+    enabled: true
+  user:
+    name: draven-admin
+    password: draven-admin-password
+management:
+  metrics:
+    web:
+      server:
+        auto-time-requests: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS
+#  boot:
+#    admin:
+#      client:
+#        url: http://localhost:8084

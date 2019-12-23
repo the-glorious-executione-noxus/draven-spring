@@ -1,0 +1,48 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: admin-server
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    lease-expiration-duration-in-seconds: 30 # 续约到期时间（默认90秒）
+    lease-renewal-interval-in-seconds: 10    # 续约更新时间间隔（默认30秒）
+    prefer-ip-address: true
+    instance-id: ${eureka.instance.ip-address}:${server.port}
+  zipkin:
+    base-url: http://localhost:8085
+    sender:
+      type: web
+    enabled: true
+  sleuth:
+    sampler:
+      probability: 1
+  rabbitmq:                    #本地环境不需要配置mq，但是需要启动mq,Springboot会自动连接本地mq
+    host: 116.196.77.250
+    port: 5672
+    username: guest
+    password: guest
+management:
+  metrics:
+    web:
+      server:
+        auto-time-requests: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS
+
+
+#  boot:
+#    admin:
+#      client:
+#        url: http://localhost:8084
