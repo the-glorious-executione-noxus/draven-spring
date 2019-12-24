@@ -8,6 +8,7 @@
         <module>noxus-draven-greenwich-admin</module>
         <module>noxus-draven-greenwich-gateway</module>
         <module>noxus-draven-greenwich-zipkin</module>
+        <module>noxus-draven-greenwich-common</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -27,6 +28,8 @@
         <spring-cloud.version>Greenwich.SR4</spring-cloud.version>
         <spring-boot-admin.version>2.1.1</spring-boot-admin.version>
         <zipkin.version>2.11.8</zipkin.version>
+        <springfox-swagger2.version>2.9.2</springfox-swagger2.version>
+        <lombok.version>1.18.10</lombok.version>
     </properties>
 
     <dependencies>
@@ -66,6 +69,23 @@
                 <artifactId>zipkin-autoconfigure-ui</artifactId>
                 <version>${zipkin.version}</version>
                 <!--<scope>runtime</scope>-->
+            </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger-ui</artifactId>
+                <version>${springfox-swagger2.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>${springfox-swagger2.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+                <scope>provided</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>

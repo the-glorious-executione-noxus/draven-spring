@@ -1,7 +1,7 @@
 spring:
   cloud:
     config:
-      profile: dev
+      profile: native
       label: master
-      url: http://localhost:8888/config_repos
+      url: http://localhost:8888
       name: gateway-server
