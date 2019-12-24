@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    config:
+      profile: native
+      label: master
+      url: http://localhost:8888
+      name: swagger2-gateway
+swagger2:
+  enable: true
