@@ -2,14 +2,13 @@ package com.noxus.draven.alibaba.greenwich.consumer.service;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestMapping;
-import reactor.core.publisher.Mono;
 
+@Component
 @FeignClient(value = "alibaba-provider")
 public interface ConsumerService {
-    @RequestMapping(value = "/provider/getString/{fegin}")
-    public Mono<String> getString(@PathVariable("fegin") String fegin);
+    @RequestMapping(value = "/provider/getString",consumes = MediaType.TEXT_PLAIN_VALUE)
+    String getString();
 
 }

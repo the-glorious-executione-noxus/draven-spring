@@ -34,3 +34,7 @@ feign:
     enabled: true
 ```
 
+
+
+
+ c.a.c.s.dashboard.metric.MetricFetcher   : Failed to fetch metric from
