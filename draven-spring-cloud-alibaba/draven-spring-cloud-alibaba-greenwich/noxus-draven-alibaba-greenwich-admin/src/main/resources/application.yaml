@@ -1,0 +1,16 @@
+#server:
+#  port: 8888
+#spring:
+#  cloud:
+#    sentinel:
+#      transport:
+#        port: 8719
+#        dashboard: 116.196.77.250:8849
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: '*'
+#  endpoint:
+#    health:
+#      show-details: ALWAYS
