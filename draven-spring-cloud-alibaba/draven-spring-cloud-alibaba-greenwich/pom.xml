@@ -7,6 +7,7 @@
         <module>noxus-draven-alibaba-greenwich-gateway</module>
         <module>noxus-draven-alibaba-greenwich-provider</module>
         <module>noxus-draven-alibaba-greenwich-consumer</module>
+        <module>noxus-draven-alibaba-greenwich-zipkin-server</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -26,6 +27,8 @@
         <spring-cloud.version>Greenwich.RELEASE</spring-cloud.version>
         <spring-cloud-alibaba.version>2.1.1.RELEASE</spring-cloud-alibaba.version>
         <spring-boot-admin.version>2.1.1</spring-boot-admin.version>
+        <lombok.version>1.18.10</lombok.version>
+        <zipkin.version>2.11.8</zipkin.version>
     </properties>
 
     <dependencies>
@@ -58,6 +61,23 @@
                 <groupId>de.codecentric</groupId>
                 <artifactId>spring-boot-admin-starter-client</artifactId>
                 <version>${spring-boot-admin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>io.zipkin.java</groupId>
+                <artifactId>zipkin-server</artifactId>
+                <version>${zipkin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.zipkin.java</groupId>
+                <artifactId>zipkin-autoconfigure-ui</artifactId>
+                <version>${zipkin.version}</version>
+                <!--<scope>runtime</scope>-->
             </dependency>
         </dependencies>
 
