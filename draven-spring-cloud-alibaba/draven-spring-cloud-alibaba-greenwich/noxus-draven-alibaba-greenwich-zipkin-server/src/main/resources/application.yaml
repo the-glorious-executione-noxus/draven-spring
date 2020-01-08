@@ -1,0 +1,24 @@
+server:
+  port: 9094
+spring:
+  # cloud:
+  #   sentinel:
+  #     transport:
+  #       port: 8719
+  #       client-ip: localhost
+  #       dashboard: localhost:8849
+  #     eager: true
+  zipkin:
+    base-url: http://localhost:9094
+  #   discoveryClientEnabled: false
+management:
+  metrics:
+    web:
+      server:
+        auto-time-requests: false
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  main:
+    allow-bean-definition-overriding: true
