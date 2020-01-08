@@ -1,6 +1,6 @@
 spring:
   application:
-    name: nacos-gateway
+    name: alibaba-gateway
   profiles:
     active: native
   cloud:
