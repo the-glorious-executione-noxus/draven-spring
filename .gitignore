@@ -26,8 +26,5 @@ hs_err_pid*
 mvnw.cmd
 mvnw
 *.*iml
-noxus-draven-hoxton-admin/src/test/
-noxus-draven-hoxton-config/src/test/
-noxus-draven-hoxton-eureka/src/test/
-noxus-draven-hoxton-gateway/src/test/
 src/
+/draven-spring-cloud-alibaba/draven-spring-cloud-alibaba-greenwich/noxus-draven-alibaba-greenwich-gateway/target
