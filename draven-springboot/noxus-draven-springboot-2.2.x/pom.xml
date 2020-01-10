@@ -5,6 +5,8 @@
         <module>noxus-draven-webflux</module>
         <module>noxus-draven-mybatis</module>
         <module>noxus-draven-data</module>
+        <module>noxus-draven-mq</module>
+        <module>noxus-draven-mq/noxus-draven-rocketmq</module>
     </modules>
     <modelVersion>4.0.0</modelVersion>
     <parent>
