@@ -5,6 +5,8 @@
     <modules>
         <module>noxus-draven-rocketmq</module>
         <module>noxus-draven-rabbitmq</module>
+        <module>noxus-draven-activemq</module>
+        <module>noxus-draven-kafkamq</module>
     </modules>
     <parent>
         <artifactId>noxus-draven-springboot-2.2.x</artifactId>
