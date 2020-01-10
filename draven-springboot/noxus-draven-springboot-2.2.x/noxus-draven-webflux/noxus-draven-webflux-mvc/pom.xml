@@ -4,14 +4,15 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <groupId>com.noxus.draven.boot</groupId>
-        <artifactId>noxus-draven-webflux-two</artifactId>
+        <artifactId>noxus-draven-webflux</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.noxus.draven.boot</groupId>
-    <artifactId>noxus-draven-boot-webflux-router</artifactId>
+    <artifactId>noxus-draven-webflux-mvc</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+
 
     <properties>
         <java.version>1.8</java.version>
