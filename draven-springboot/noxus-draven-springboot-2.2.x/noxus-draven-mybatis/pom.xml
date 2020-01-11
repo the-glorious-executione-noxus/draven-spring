@@ -19,7 +19,7 @@
 
 
     <properties>
-        <mybatis-spring-boot.version>1.3.2</mybatis-spring-boot.version>
+        <mybatis-spring-boot.version>2.1.0</mybatis-spring-boot.version>
         <velocity.version>2.1</velocity.version>
         <persistence-api.version>1.0.2</persistence-api.version>
         <tk.mapper.version>2.1.0</tk.mapper.version>
