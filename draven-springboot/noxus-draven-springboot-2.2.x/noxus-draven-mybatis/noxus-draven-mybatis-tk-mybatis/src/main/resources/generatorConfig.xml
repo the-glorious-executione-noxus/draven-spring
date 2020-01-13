@@ -6,33 +6,37 @@
 <generatorConfiguration>
     <!-- 引入外部属性文件 -->
     <properties resource="config.properties"/>
-    <context id="Mysql" targetRuntime="MyBatis3Simple"
-             defaultModelType="flat">
+
+
+    <!--<context id="Mysql" targetRuntime="MyBatis3Simple"   defaultModelType="flat">-->
+    <!--<context id="dsql" targetRuntime="MyBatis3DynamicSql" defaultModelType="flat">-->
+    <context id="DB2Tables" targetRuntime="MyBatis3" defaultModelType="flat">
         <property name="javaFileEncoding" value="UTF-8"/>
-<!--        <property name="beginningDelimiter" value="`"/>
-        <property name="endingDelimiter" value="`"/>-->
+        <!--        <property name="beginningDelimiter" value="`"/>
+                <property name="endingDelimiter" value="`"/>-->
         <!--配置是否使用通用 Mapper 自带的注释扩展，默认 true-->
-        <property name="useMapperCommentGenerator" value="false"/>
+        <property name="useMapperCommentGenerator" value="true"/>
 
 
         <!-- 配置通用Mapper的MBG插件相关信息 -->
-        <plugin type="tk.mybatis.mapper.generator.MapperPlugin">
-            <property name="mappers" value="tk.mybatis.mapper.common.Mapper"/>
+        <plugin type="${mapper.plugin}">
+            <property name="mappers" value="${mapper.Mapper}"/>
             <property name="caseSensitive" value="true"/>
             <property name="lombok" value="Getter,Setter,ToString,Accessors"/>
-            <!--<property name="forceAnnotation" value="true"/>-->
-<!--            <property name="beginningDelimiter" value="`"/>
-            <property name="endingDelimiter" value="`"/>-->
+            <!-- 是否增加字段注解-->
+            <property name="forceAnnotation" value="true"/>
+            <!-- <property name="beginningDelimiter" value="`"/>-->
+            <!-- <property name="endingDelimiter" value="`"/>-->
         </plugin>
 
         <!--通用代码生成器插件-->
-<!--        <plugin type="tk.mybatis.mapper.generator.TemplateFilePlugin">
-            <property name="targetProject" value="src/test/java"/>
-            <property name="targetPackage" value="test.mapper"/>
-            <property name="templatePath" value="mapper.ftl"/>
-            <property name="mapperSuffix" value="Dao"/>
-            <property name="fileName" value="${tableClass.shortClassName}${mapperSuffix}.java"/>
-        </plugin>-->
+        <!--        <plugin type="tk.mybatis.mapper.generator.TemplateFilePlugin">
+                    <property name="targetProject" value="src/test/java"/>
+                    <property name="targetPackage" value="test.mapper"/>
+                    <property name="templatePath" value="mapper.ftl"/>
+                    <property name="mapperSuffix" value="Dao"/>
+                    <property name="fileName" value="${tableClass.shortClassName}${mapperSuffix}.java"/>
+                </plugin>-->
 
         <!-- 配置连接数据库的基本信息 -->
         <jdbcConnection
@@ -62,7 +66,7 @@
         <!-- tableName="%"表示数据库中所有表都参与逆向工程，此时使用默认规则 -->
         <!-- 默认规则：table_dept→TableDept -->
         <!-- 不符合默认规则时需要使用tableName和domainObjectName两个属性明确指定 -->
-        <table tableName="user" domainObjectName="user">
+        <table tableName="user" domainObjectName="User">
             <!-- 配置主键生成策略 -->
             <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
         </table>
