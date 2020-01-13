@@ -11,7 +11,7 @@
 .mtj.tmp/
 
 # Package Files #
-*.jar
+
 *.war
 *.nar
 *.ear
@@ -23,8 +23,36 @@
 hs_err_pid*
 
 /.idea/
-mvnw.cmd
-mvnw
-*.*iml
-src/
+/mvnw.cmd
+/mvnw
+**/*.iml
+/draven-spring-cloud-alibaba/draven-spring-cloud-alibaba-greenwich/noxus-draven-alibaba-greenwich-provider/*.iml
+/draven-spring-cloud-alibaba/draven-spring-cloud-alibaba-greenwich/noxus-draven-alibaba-greenwich-provider/target
 /draven-spring-cloud-alibaba/draven-spring-cloud-alibaba-greenwich/noxus-draven-alibaba-greenwich-gateway/target
+/draven-spring-cloud-alibaba/draven-spring-cloud-alibaba-greenwich/noxus-draven-alibaba-greenwich-admin/target
+/draven-spring-cloud-alibaba/draven-spring-cloud-alibaba-greenwich/noxus-draven-alibaba-greenwich-consumer/target
+/draven-spring-cloud-alibaba/draven-spring-cloud-alibaba-greenwich/noxus-draven-alibaba-greenwich-zipkin-server/target
+/draven-springboot/noxus-draven-springboot-2.2.x/noxus-draven-webflux/*.iml
+/draven-springboot/noxus-draven-springboot-2.2.x/noxus-draven-webflux/noxus-draven-webflux-router/*.iml
+/draven-springboot/noxus-draven-springboot-2.2.x/noxus-draven-webflux/noxus-draven-webflux-mvc/target
+/draven-springboot/noxus-draven-springboot-2.2.x/noxus-draven-webflux/noxus-draven-webflux-mvc/*.iml
+/draven-springboot/noxus-draven-springboot-2.2.x/noxus-draven-mybatis/*.iml
+/draven-springboot/noxus-draven-springboot-2.2.x/noxus-draven-mybatis/noxus-draven-mybatis-tk-mybatis/target
+/draven-springboot/noxus-draven-springboot-2.2.x/noxus-draven-mybatis/noxus-draven-mybatis-tk-mybatis/*.iml
+/draven-springboot/noxus-draven-springboot-2.2.x/noxus-draven-mybatis/noxus-draven-mybatis-mybatis-plus/target
+/draven-springboot/noxus-draven-springboot-2.2.x/noxus-draven-mybatis/noxus-draven-mybatis-mybatis-plus/*.iml
+/draven-springboot/noxus-draven-springboot-2.2.x/noxus-draven-mybatis/noxus-draven-mybatis-mybatis-plus/*.iml
+/draven-springboot/noxus-draven-springboot-2.2.x/noxus-draven-mybatis/noxus-draven-mybatis-mybatis/target
+/draven-springboot/noxus-draven-springboot-2.2.x/noxus-draven-mybatis/noxus-draven-mybatis-mybatis/*.iml
+/draven-springboot/noxus-draven-springboot-2.2.x/noxus-draven-mybatis/noxus-draven-mybatis-annon/target
+/draven-springboot/noxus-draven-springboot-2.2.x/noxus-draven-mybatis/noxus-draven-mybatis-annon/*.iml
+/draven-springboot/noxus-draven-springboot-2.2.x/noxus-draven-mq/*.iml
+/draven-springboot/noxus-draven-springboot-2.2.x/noxus-draven-mq/noxus-draven-rocketmq/*.iml
+/draven-springboot/noxus-draven-springboot-2.2.x/noxus-draven-mq/noxus-draven-rabbitmq/*.iml
+/draven-springboot/noxus-draven-springboot-2.2.x/noxus-draven-mq/noxus-draven-kafkamq/*.iml
+/draven-springboot/noxus-draven-springboot-2.2.x/noxus-draven-mq/noxus-draven-activemq/*.iml
+/draven-springboot/noxus-draven-springboot-2.2.x/noxus-draven-data/*.iml
+/draven-springboot/noxus-draven-springboot-2.2.x/noxus-draven-data/noxus-draven-data-mongo/*.iml
+/draven-springboot/noxus-draven-springboot-2.2.x/noxus-draven-data/noxus-draven-data-hibernate/*.iml
+/draven-springboot/noxus-draven-springboot-2.2.x/noxus-draven-data/noxus-draven-data-elasticsearch/target
+/draven-springboot/noxus-draven-springboot-2.2.x/noxus-draven-data/noxus-draven-data-elasticsearch/*.iml
