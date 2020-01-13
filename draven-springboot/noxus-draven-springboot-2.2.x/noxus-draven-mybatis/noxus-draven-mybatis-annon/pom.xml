@@ -58,6 +58,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
+                    <mainClass>com.noxus.draven.annon.AnnonApplication</mainClass>
                     <fork>true</fork>
                 </configuration>
             </plugin>

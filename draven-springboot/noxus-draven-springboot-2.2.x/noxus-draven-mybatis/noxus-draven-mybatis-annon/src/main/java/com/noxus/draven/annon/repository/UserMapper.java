@@ -1,7 +1,7 @@
 package com.noxus.draven.annon.repository;
 
-import com.noxus.draven.hibernate.config.dynamic.DataSource;
-import com.noxus.draven.hibernate.entity.User;
+import com.noxus.draven.annon.config.dynamic.DataSource;
+import com.noxus.draven.annon.entity.User;
 
 import java.util.List;
 

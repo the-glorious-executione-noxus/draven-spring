@@ -1,11 +1,9 @@
 package com.noxus.draven.annon.entity;
 
-import lombok.AccessLevel;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.experimental.FieldDefaults;
-
-import javax.persistence.*;
+import lombok.Setter;
 
 @Data
 @NoArgsConstructor
