@@ -12,7 +12,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Import(DynamicDataSourceRegister.class)
 @SpringBootApplication
-@MapperScan("com.noxus.draven.hibernate.repository")
+@MapperScan("com.noxus.draven.annon.mapper")
 @EnableTransactionManagement
 public class AnnonApplication {
     public static void main(String[] args) {

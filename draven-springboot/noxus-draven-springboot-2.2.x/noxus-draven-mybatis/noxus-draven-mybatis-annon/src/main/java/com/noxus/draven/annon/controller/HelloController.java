@@ -1,8 +1,7 @@
 package com.noxus.draven.annon.controller;
 
-import com.noxus.draven.annon.config.dynamic.DataSource;
 import com.noxus.draven.annon.entity.User;
-import com.noxus.draven.annon.repository.UserMapper;
+import com.noxus.draven.annon.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

@@ -24,7 +24,9 @@ spring:
         #type: com.zaxxer.hikari.HikariDataSource
 mybatis:
   mapper-locations: classpath:/mybatis/*.xml
-  config-location:  classpath:/config/mybatis-config.xml
+  # config-location:  classpath:/config/mybatis-config.xml
+  type-aliases-package: com.noxus.draven.annon.entity
+
 
 logging:
   level:
