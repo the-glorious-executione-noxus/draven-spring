@@ -1,4 +1,4 @@
-package com.noxus.draven.hibernate.repository;
+package com.noxus.draven.annon.repository;
 
 import com.noxus.draven.hibernate.config.dynamic.DataSource;
 import com.noxus.draven.hibernate.entity.User;

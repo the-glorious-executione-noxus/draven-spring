@@ -1,8 +1,8 @@
-package com.noxus.draven.hibernate;
+package com.noxus.draven.annon;
 
-import com.noxus.draven.hibernate.config.dynamic.DynamicDataSourceAnnotationAdvisor;
-import com.noxus.draven.hibernate.config.dynamic.DynamicDataSourceAnnotationInterceptor;
-import com.noxus.draven.hibernate.config.dynamic.DynamicDataSourceRegister;
+import com.noxus.draven.annon.config.dynamic.DynamicDataSourceAnnotationAdvisor;
+import com.noxus.draven.annon.config.dynamic.DynamicDataSourceAnnotationInterceptor;
+import com.noxus.draven.annon.config.dynamic.DynamicDataSourceRegister;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -14,9 +14,9 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @SpringBootApplication
 @MapperScan("com.noxus.draven.hibernate.repository")
 @EnableTransactionManagement
-public class HibernateApplication {
+public class AnnonApplication {
     public static void main(String[] args) {
-        SpringApplication.run(HibernateApplication.class, args);
+        SpringApplication.run(AnnonApplication.class, args);
     }
 
     @Bean

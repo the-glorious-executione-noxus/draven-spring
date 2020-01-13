@@ -1,4 +1,4 @@
-package com.noxus.draven.hibernate.entity;
+package com.noxus.draven.annon.entity;
 
 import lombok.AccessLevel;
 import lombok.Data;

@@ -6,6 +6,7 @@
         <module>noxus-draven-mybatis-mybatis</module>
         <module>noxus-draven-mybatis-tk-mybatis</module>
         <module>noxus-draven-mybatis-mybatis-plus</module>
+        <module>noxus-draven-mybatis-annon</module>
     </modules>
 
     <parent>

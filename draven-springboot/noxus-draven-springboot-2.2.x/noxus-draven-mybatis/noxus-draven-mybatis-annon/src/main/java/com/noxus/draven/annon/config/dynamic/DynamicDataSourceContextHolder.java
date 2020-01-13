@@ -1,4 +1,4 @@
-package com.noxus.draven.hibernate.config.dynamic;
+package com.noxus.draven.annon.config.dynamic;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
