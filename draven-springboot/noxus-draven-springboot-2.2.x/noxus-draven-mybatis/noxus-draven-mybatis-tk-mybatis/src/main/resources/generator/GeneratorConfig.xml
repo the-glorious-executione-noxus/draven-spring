@@ -171,10 +171,10 @@
                          targetProject="${project.baseTarget}"
                          type="XMLMAPPER"/>
 
-    <table tableName="ub_install">
+    <table tableName="user">
       <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
     </table>
-    <table tableName="ub_like">
+   <!-- <table tableName="ub_like">
       <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
     </table>
     <table tableName="ub_read">
@@ -182,6 +182,6 @@
     </table>
     <table tableName="ub_transmit">
       <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
-    </table>
+    </table>-->
   </context>
 </generatorConfiguration>
