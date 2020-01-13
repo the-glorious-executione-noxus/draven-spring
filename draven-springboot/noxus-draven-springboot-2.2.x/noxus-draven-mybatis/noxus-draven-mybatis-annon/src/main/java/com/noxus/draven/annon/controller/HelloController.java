@@ -23,8 +23,9 @@ public class HelloController {
     private UserMapper userMapper;
 
     @RequestMapping("/contextLoads")
-    public void contextLoads() {
+    public User contextLoads() {
         User user = userMapper.selectById(2L);
         System.out.println(user);
+        return user;
     }
 }
