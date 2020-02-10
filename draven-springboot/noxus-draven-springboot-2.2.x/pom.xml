@@ -8,6 +8,7 @@
         <module>noxus-draven-mq</module>
         <module>noxus-draven-fastdfs</module>
         <module>noxus-draven-document</module>
+        <module>noxus-draven-pay</module>
     </modules>
     <modelVersion>4.0.0</modelVersion>
     <parent>
