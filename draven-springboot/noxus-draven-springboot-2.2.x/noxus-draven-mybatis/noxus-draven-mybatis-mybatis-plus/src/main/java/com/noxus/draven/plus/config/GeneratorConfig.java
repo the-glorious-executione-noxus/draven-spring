@@ -80,7 +80,7 @@ public class GeneratorConfig {
         //dsc.setIDbQuery();
 
         dsc.setDbType(DbType.MYSQL);
-        dsc.setUrl("jdbc:mysql://116.196.77.250:3306/user");
+        dsc.setUrl("jdbc:mysql://116.196.77.250:3306/tensquare_user");
         dsc.setDriverName("com.mysql.cj.jdbc.Driver");
         dsc.setUsername("root");
         dsc.setPassword("root");
@@ -122,9 +122,9 @@ public class GeneratorConfig {
         strategy.setNaming(NamingStrategy.underline_to_camel);
         // setInclude(scanner("表名，多个英文逗号分割").split(","))
         // 只有该表生成
-        strategy.setInclude("user");
+        //strategy.setInclude("user");
         // 只有该表不生成
-        // strategy.setExclude("permission");
+        strategy.setExclude("permission");
 
         strategy.setFieldPrefix("info");
 

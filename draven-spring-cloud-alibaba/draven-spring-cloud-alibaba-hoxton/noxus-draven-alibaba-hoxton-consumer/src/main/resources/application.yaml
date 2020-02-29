@@ -1,0 +1,21 @@
+#server:
+#  port: 9998
+## spring:
+##   cloud:
+##     sentinel:
+##       transport:
+##         port: 8850
+##         dashboard: 116.196.77.250:8849
+#feign:
+#  httpclient:
+#    enabled: false
+#  okhttp:
+#    enabled: true
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: '*'
+#  endpoint:
+#    health:
+#      show-details: ALWAYS

@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: alibaba-admin
+  profiles:
+    active: native
+  cloud:
+    nacos:
+      config:
+        server-addr: 116.196.77.250:8848
+        file-extension: yaml
+        group: NATIVE_GROUP
+        namespace: 7d7282e8-1906-460e-8729-0492358c4b2b
+      discovery:
+        server-addr: 116.196.77.250:8848
+        service: ${spring.application.name}
+        group: NATIVE_GROUP
+        namespace: 7d7282e8-1906-460e-8729-0492358c4b2b
+        #        ip: 116.196.77.250
+        #        port: 8848
+        #
+

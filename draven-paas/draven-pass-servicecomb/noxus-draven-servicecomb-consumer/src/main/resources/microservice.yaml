@@ -1,0 +1,16 @@
+APPLICATION_ID: start.servicecomb.io
+service_description:
+  name: consumer
+  version: 0.0.1
+servicecomb:
+  handler:
+    chain:
+      Provider: {}
+  rest:
+    address: 0.0.0.0:9081
+  service:
+    registry:
+      address: http://116.196.77.250:30100
+      autodiscovery: false
+server:
+  port: 8081
