@@ -1,4 +1,4 @@
-//package com.noxus.draven.alibaba.hoxton.provider.controller.config;
+//package com.noxus.draven.alibaba.hoxton.provider.config;
 //
 //import com.zaxxer.hikari.HikariDataSource;
 //import io.seata.rm.datasource.DataSourceProxy;
