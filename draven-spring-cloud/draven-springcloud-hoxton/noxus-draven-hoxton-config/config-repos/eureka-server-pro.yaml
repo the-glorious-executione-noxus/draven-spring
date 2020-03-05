@@ -5,6 +5,9 @@
 #  application:
 #    name: eureka-server
 #eureka:
+#  server:
+#    enable-self-preservation: false #关闭自我保护 原理
+#    eviction-interval-timer-in-ms: 60000 #清理间隔
 #  client:
 #    fetch-registry: false
 #    register-with-eureka: true
