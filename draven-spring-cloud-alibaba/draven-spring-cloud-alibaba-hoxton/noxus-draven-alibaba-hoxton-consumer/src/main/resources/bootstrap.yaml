@@ -22,4 +22,6 @@ spring:
         #        ip: 116.196.77.250
         #        port: 8848
         #
-
+feign:
+  sentinel:
+    enabled: true

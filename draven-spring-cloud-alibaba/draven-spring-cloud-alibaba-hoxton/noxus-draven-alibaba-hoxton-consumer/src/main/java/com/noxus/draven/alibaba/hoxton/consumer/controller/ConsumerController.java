@@ -31,10 +31,16 @@ public class ConsumerController {
         return consumerService.getString();
     }
 
-
+    @SentinelResource(value = "sayHello")
     @GetMapping(value = "/consumer")
     public String echotest() {
         return rediswahaha;
     }
 
+
+//    @SentinelResource(value = "echotestornot")
+    @GetMapping(value = "/echotestornot")
+    public String echotestornot() {
+        return rediswahaha;
+    }
 }

@@ -21,3 +21,7 @@ spring:
 #    alibaba:
 #      seata:
 #        tx-service-group: default
+
+feign:
+  sentinel:
+    enabled: true
