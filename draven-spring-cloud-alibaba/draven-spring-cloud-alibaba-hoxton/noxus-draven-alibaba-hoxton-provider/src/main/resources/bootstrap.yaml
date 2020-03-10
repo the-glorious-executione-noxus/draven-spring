@@ -10,6 +10,14 @@ spring:
         file-extension: yaml
         group: NATIVE_GROUP
         namespace: 7d7282e8-1906-460e-8729-0492358c4b2b
+        extension-configs[0]: # 括号内的值越大优先级越高
+          refresh: true # 自动刷新
+          data-id: redis.yaml # 扩展文件名称
+          group: NATIVE_GROUP # 分组
+        shared-configs[0]:
+          data-id: mysql.yaml
+          group: NATIVE_GROUP
+          refresh: true
       discovery:
         server-addr: 116.196.77.250:8848
         service: ${spring.application.name}

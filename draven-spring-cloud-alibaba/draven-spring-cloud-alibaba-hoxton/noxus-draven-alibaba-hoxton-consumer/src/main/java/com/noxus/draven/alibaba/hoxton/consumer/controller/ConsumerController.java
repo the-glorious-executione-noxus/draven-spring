@@ -22,6 +22,9 @@ public class ConsumerController {
     @Value("${redis.wawa}")
     private String rediswahaha;
 
+    @Value("${mysql.url}")
+    private String url;
+
     @Autowired
     private ConsumerService consumerService;
 
@@ -41,6 +44,6 @@ public class ConsumerController {
 //    @SentinelResource(value = "echotestornot")
     @GetMapping(value = "/echotestornot")
     public String echotestornot() {
-        return rediswahaha;
+        return rediswahaha+ " "  + url;
     }
 }
