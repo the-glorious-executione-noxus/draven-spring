@@ -28,4 +28,11 @@ public class ConsumerController {
         return consumerService.getString();
     }
 
+
+    @GetMapping(value = "/consumer")
+    //@SentinelResource("/consumer")
+    public String echoconsumer() {
+        return "就是今生今世";
+    }
+
 }
